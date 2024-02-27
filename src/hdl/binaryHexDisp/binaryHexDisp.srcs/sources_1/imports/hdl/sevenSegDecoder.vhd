@@ -72,11 +72,11 @@ o_S(6) <= c_Sg;
 
 
 
-c_Sa <= (not i_D(0) and i_D(1) and not i_D(2) and i_D(3))
-    or (i_D(0) and i_D(1) and not i_D(2) and i_D(3))
-    or (not i_D(0) and i_D(2) and i_D(3))
-    or (not i_D(0) and not i_D(1) and i_D(3))
-    or (i_D(0) and i_D(1) and i_D(2) and not i_D(3));
+c_Sa <= '1' when (  (i_D = x"1") or
+                    (i_D = x"4") or 
+                    (i_D = x"B") or 
+                    (i_D = x"C") or 
+                    (i_D = x"D")) else '0';
 c_Sg <= (not i_D(3) and i_D(2) and i_D(1) and i_D(0))
     or (not i_D(3) and not i_D(2) and not i_D(1));
 c_Sb <= '1' when (  (i_D = x"5") or
@@ -88,8 +88,8 @@ c_Sb <= '1' when (  (i_D = x"5") or
 c_Se <= '1' when (  (i_D = x"1") or
                     (i_D = x"3") or 
                     (i_D = x"4") or
-                    (i_D = x"5") or
                     (i_D = x"7") or
+                    (i_D = x"5") or
                     (i_D = x"9")) else '0';
 c_Sc <= '1' when (  (i_D = x"2") or
                     (i_D = x"C") or 

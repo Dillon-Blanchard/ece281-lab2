@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Dillon.Blanchard/ece281-lab2/src/hdl/Basys3_Master.xdc rfile:../../../../Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Dillon.Blanchard/ece281-lab2/src/hdl/binaryHexDisp/binaryHexDisp.srcs/constrs_1/imports/hdl/Basys3_Master.xdc rfile:../../../binaryHexDisp.srcs/constrs_1/imports/hdl/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
