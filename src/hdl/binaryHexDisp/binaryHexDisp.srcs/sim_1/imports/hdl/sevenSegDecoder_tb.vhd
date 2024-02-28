@@ -53,7 +53,7 @@ component sevenSegDecoder is
     
        
 signal w_bus: std_logic_vector(3 downto 0);
-signal w_seg: std_logic_vector(6 downto 0);   
+signal w_seg: std_logic_vector(7 downto 0);   
     
    begin  
         sevenSegDecoder_inst : sevenSegDecoder port map(
@@ -67,7 +67,7 @@ signal w_seg: std_logic_vector(6 downto 0);
         o_S(3) => w_seg(3),
         o_S(4) => w_seg(4),
         o_S(5) => w_seg(5),
-        o_S(6) => w_seg(6) 
+        o_S(6) => w_seg(6)
         );    
 test_process : process    
     begin 
